@@ -53,23 +53,6 @@ The application uses a custom design system optimized for accessibility and clar
 - **Typography**: `@expo-google-fonts/poppins`
 - **Styling**: React Native StyleSheet
 
----
-
-## How to Deploy to Vercel (One-Click)
-
-This repository includes a preconfigured `vercel.json` file for automatic deployment:
-
-1. Push this repository to GitHub.
-2. Go to [Vercel Dashboard](https://vercel.com/new).
-3. Import your GitHub repository (`Sharecare-app`).
-4. Keep the default settings:
-   - **Framework Preset**: Other
-   - **Build Command**: `npx expo export --platform web` (automatically detected from `vercel.json`)
-   - **Output Directory**: `dist` (automatically detected from `vercel.json`)
-5. Click **Deploy**. Your app will be live with an HTTPS URL that anyone can open in their browser without installing anything.
-
----
-
 ## Local Development
 
 To run the project locally on your machine or physical device:
