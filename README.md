@@ -6,7 +6,7 @@ ShareCare is a mobile application prototype designed for digital volunteering an
 
 ## Live Prototype
 
-- **Live Web App**: [Deploy via Vercel]
+- **Live Web App**: [Deploy via Vercel] -> https://sharecare-prototype.vercel.app
 - **Interactive Simulator**: Run directly on browser or mobile via Expo Snack.
 
 ---
