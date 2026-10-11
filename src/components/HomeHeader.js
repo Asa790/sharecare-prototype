@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, TextInput, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, Text, TextInput, StyleSheet, TouchableOpacity, Image } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { COLORS, FONTS } from '../constants/theme';
 
@@ -9,9 +9,11 @@ export default function HomeHeader({ onSearchPress, onNotificationPress }) {
       {/* Top Bar with Brand & Actions */}
       <View style={styles.topRow}>
         <View style={styles.brandContainer}>
-          <View style={styles.logoBadge}>
-            <Ionicons name="heart" size={20} color={COLORS.accent} />
-          </View>
+          <Image
+            source={require('../../assets/logo.png')}
+            style={styles.logoImage}
+            resizeMode="contain"
+          />
           <View>
             <Text style={styles.brandTitle}>
               Share<Text style={styles.brandAccent}>Care</Text>
@@ -70,17 +72,11 @@ const styles = StyleSheet.create({
   brandContainer: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 10,
+    gap: 12,
   },
-  logoBadge: {
-    width: 38,
-    height: 38,
-    borderRadius: 19,
-    backgroundColor: '#FFF2EB',
-    alignItems: 'center',
-    justifyContent: 'center',
-    borderWidth: 1.5,
-    borderColor: COLORS.accent,
+  logoImage: {
+    width: 44,
+    height: 44,
   },
   brandTitle: {
     fontFamily: FONTS.bold,
